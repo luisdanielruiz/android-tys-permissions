@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<plugin id="cordova-plugin-android-camera-permissions" version="1.0.4" xmlns="http://apache.org/cordova/ns/plugins/1.0">
+    <name>Camera Permissions</name>
+    <author>Daniel Ruiz</author>
+    <description>Cordova plugin to add Internet, call and location permissions.</description>
+    <keywords>cordova internet, location, call permissions</keywords>
+    <license>MIT</license>
+    <engines>
+        <engine name="cordova" version=">=3.0.0"/>
+    </engines>
+    <platform name="android">
+      <config-file target="AndroidManifest.xml" parent="/manifest">
+        <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+        <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+        <uses-permission android:name="android.permission.CALL_PHONE" />
+        <uses-permission android:name="android.permission.INTERNET" />
+      </config-file>
+    </platform>
+</plugin>
